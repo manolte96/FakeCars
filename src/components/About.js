@@ -4,19 +4,19 @@ import { Container, Divider, Switch } from "@mui/material";
 class About extends Component {
   state = {
     checked: true,
-    heading: "About FakeCars.com",
+    heading: "About Brazilian Jiu Jitsu",
   };
 
   toggleSwitch = () => {
     const newVal = !this.state.checked;
     if (newVal) {
       return this.setState({
-        heading: "About FakeCars.com",
+        heading: "About Brazilian Jiu Jitsu",
         checked: newVal,
       });
     }
     return this.setState({
-      heading: "About Cars.com",
+      heading: "About BJJ",
       checked: newVal,
     });
   };
@@ -27,28 +27,12 @@ class About extends Component {
         <Container maxWidth="sm">
           <h1 style={{ textAlign: "center" }}>{this.state.heading}</h1>
           <p>
-            FakeCars.com was created to solve a specific problem. That problem
-            is quick and reliable access to details about many different models,
-            all in one place. We had to use the word "Fake" in our name so that
-            we don't get sued by the real&nbsp;
-            <a
-              style={{ color: "mediumblue" }}
-              href="https://www.cars.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cars.com
-            </a>
-            &nbsp;but we won't worry too much about that. We've provided a link
-            to the actual cars.com above and we did not receive any money from
-            them to do so. Although, there's an argument that maybe we should
-            since we are a top-notch coding bootcamp and anyone would want to be
-            associated with us :)
+          BJJ, also called "the gentle art," exists as an evolvolution of Judo, paying more attention to what finishes the fight once it has been brought to the ground. Following a public lesson by a travelling Japanese judoka, Mitsuyo Maeda, in 1917, a family of brothers with the surname "Gracie" devleoped those technicques into "Gracie JiuJitsu" and began to popularize the sport in Brazil. A son (Rorion) of one of those brothers (Helio) moved to the United States in 1978, and co-founded the Ultimate Fighting Championship in 1993. Today, almost 30 years later, JiuJitsu gyms span the planet Earth and thousands of people are practicing and enjoying the gentle art every day.  
+
           </p>
           <Divider />
           <p>
-            If you'd like you can toggle the word "Fake" because why not? We
-            have the potential to be the real cars.com if we wanted to be.
+            If you'd like you can toggle the phrase "Brazilian Jiu Jitsu" for the easier "BJJ" 
           </p>
           <Switch
             checked={this.state.checked}
